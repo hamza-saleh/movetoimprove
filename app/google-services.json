@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "585644967262",
+    "firebase_url": "https://movetoimprove-1d75b.firebaseio.com",
+    "project_id": "movetoimprove-1d75b",
+    "storage_bucket": "movetoimprove-1d75b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585644967262:android:646323dae56918ad3f3bcf",
+        "android_client_info": {
+          "package_name": "ch.zli.m335.movetoimprove"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585644967262-23sdi2mn2hcjmsr395e24lp19o3h7jt6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUYs7ZnPyMinLKTJDoSMfNR_ka_1NJ5LA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585644967262-23sdi2mn2hcjmsr395e24lp19o3h7jt6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
