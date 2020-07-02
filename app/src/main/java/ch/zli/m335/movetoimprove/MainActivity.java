@@ -21,11 +21,14 @@ import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 
+import java.sql.Time;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button mapbutton;
     private Intent mapIntent;
     private Button timebutton;
+    private Intent timeIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +36,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mapbutton = (Button) findViewById(R.id.mapbutton);
+        timebutton = (Button) findViewById(R.id.timebutton);
 
+        timebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mapIntent = new Intent(MainActivity.this, TimeActivity.class);
+                startActivity(mapIntent);
+            }
+        });
         mapbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
