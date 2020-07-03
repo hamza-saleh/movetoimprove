@@ -2,6 +2,7 @@ package ch.zli.m335.movetoimprove;
 
 import androidx.fragment.app.FragmentActivity;
 
+import android.location.Location;
 import android.os.Bundle;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -14,6 +15,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    Location currentLocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,9 +40,32 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        mMap.addMarker(new MarkerOptions().position(sydney).title("First point"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+
+        LatLng point1 = new LatLng(-34.1, 151);
+        mMap.addMarker(new MarkerOptions().position(point1).title("Second point"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(point1));
+
+        LatLng point2 = new LatLng(-34.1, 150.9);
+        mMap.addMarker(new MarkerOptions().position(point2).title("Third point"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(point2));
+
+        LatLng point3 = new LatLng(-33.9, 151);
+        mMap.addMarker(new MarkerOptions().position(point3).title("Fourth point"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(point3));
+
+        LatLng point4 = new LatLng(-34.1, 151.1);
+        mMap.addMarker(new MarkerOptions().position(point4).title("Fifth point"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(point4));
+
+        LatLng point5 = new LatLng(-34, 151.1);
+        mMap.addMarker(new MarkerOptions().position(point5).title("Sixth point"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(point5));
+
+        LatLng point6 = new LatLng(-34, 150.9);
+        mMap.addMarker(new MarkerOptions().position(point6).title("Seventh point"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(point6));
     }
 }
