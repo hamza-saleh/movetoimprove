@@ -46,31 +46,31 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng sydney = new LatLng(-34, 151);
+        LatLng sydney = new LatLng(61, 105);
         mMap.addMarker(new MarkerOptions().position(sydney).title("First point"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
-        LatLng point1 = new LatLng(-34.1, 151);
+        LatLng point1 = new LatLng(61.12, 105.2);
         mMap.addMarker(new MarkerOptions().position(point1).title("Second point"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(point1));
 
-        LatLng point2 = new LatLng(-34.1, 150.9);
+        LatLng point2 = new LatLng(60.86, 104.89);
         mMap.addMarker(new MarkerOptions().position(point2).title("Third point"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(point2));
 
-        LatLng point3 = new LatLng(-33.9, 151);
+        LatLng point3 = new LatLng(61.23, 104.99);
         mMap.addMarker(new MarkerOptions().position(point3).title("Fourth point"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(point3));
 
-        LatLng point4 = new LatLng(-34.1, 151.1);
+        LatLng point4 = new LatLng(60.88, 105.13);
         mMap.addMarker(new MarkerOptions().position(point4).title("Fifth point"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(point4));
 
-        LatLng point5 = new LatLng(-34, 151.1);
+        LatLng point5 = new LatLng(61.11, 105.3432);
         mMap.addMarker(new MarkerOptions().position(point5).title("Sixth point"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(point5));
 
-        LatLng point6 = new LatLng(-34, 150.9);
+        LatLng point6 = new LatLng(60.5, 105.321);
         mMap.addMarker(new MarkerOptions().position(point6).title("Seventh point"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(point6));
     }

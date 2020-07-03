@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
     private Intent mapIntent;
     private Button timebutton;
     private Intent timeIntent;
+    private Intent locationIntent;
+    private Button locationbutton;
+    private Button points;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,15 +40,24 @@ public class MainActivity extends AppCompatActivity {
 
         mapbutton = (Button) findViewById(R.id.mapbutton);
         timebutton = (Button) findViewById(R.id.timebutton);
+        locationbutton = (Button) findViewById(R.id.locationbutton);
 
-        Location location;
-        location.getcurrentl
+
+
+
+        locationbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                locationIntent = new Intent(MainActivity.this, Location.class);
+                startActivity(locationIntent);
+            }
+        });
 
         timebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mapIntent = new Intent(MainActivity.this, TimeActivity.class);
-                startActivity(mapIntent);
+                timeIntent = new Intent(MainActivity.this, TimeActivity.class);
+                startActivity(timeIntent);
             }
         });
         mapbutton.setOnClickListener(new View.OnClickListener() {
