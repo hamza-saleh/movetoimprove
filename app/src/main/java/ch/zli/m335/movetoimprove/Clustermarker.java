@@ -17,6 +17,7 @@ import com.google.maps.android.clustering.ClusterItem;
          this.title = title;
          this.snippet = snippet;
          this.iconPicture = iconPicture;
+         snb
      }
      public Clustermarker() {
 
