@@ -38,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
         mapbutton = (Button) findViewById(R.id.mapbutton);
         timebutton = (Button) findViewById(R.id.timebutton);
 
+        Location location;
+        location.getcurrentl
+
         timebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
